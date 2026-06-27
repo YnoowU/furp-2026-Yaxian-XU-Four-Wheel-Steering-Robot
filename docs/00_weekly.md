@@ -1,5 +1,24 @@
 # Weekly Progress Log
 
+Week 2 — 2026-06-27
+Attended this week's meeting: Yes
+
+Progress this week
+
+Built a basic steering wheel (swerve drive) chassis physical model in MATLAB Simscape Multibody, including 4 steering wheel modules, 1 chassis body, and proper ground contact force configurations.
+
+Successfully implemented and debugged the motion control pipeline: by inputting target linear velocities (vx, vy) and angular velocity (Omega), the model correctly resolves the kinematics to drive the 4 steering wheels, allowing the chassis to execute commands as expected.
+
+Challenges & blockers
+
+Tuning contact force parameters: Spent some time fine-tuning the contact stiffness and damping coefficients to ensure the 4 wheels maintain stable ground contact without realistic slipping or high-frequency jittering.
+
+Next steps
+
+Further optimize control responses and test chassis stability under dynamic velocity commands or uneven terrain.
+
+Revisit last week's goal regarding robot modeling—explore syncing or importing more detailed asset formats (like USD) into MATLAB or MuJoCo alongside this working control loop.
+
 Week 1 — 2026-06-20
 Attended this week's meeting: Yes
 
@@ -25,7 +44,6 @@ Continue researching how to successfully bring the robot model and control loops
 
 Wait for and review the overview/general structure of the project in MATLAB to align my next development steps.
 
-Hours spent (optional): 10h
 > Update this file **every week**. Add a new entry at the top for each week.
 > This is the first thing we check during review. Keep it honest and specific — it also feeds your attendance record (Rule 1).
 
